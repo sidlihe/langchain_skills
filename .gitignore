@@ -1,3 +1,7 @@
 .env
 .ssh_identity/
 venv/
+__pycache__/
+.ipynb_checkpoints/
+studio/
+.langgraph_api/
