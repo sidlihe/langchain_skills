@@ -1,3 +1,4 @@
+#module_1/langgraph/simple_graph.py
 import os
 from typing import TypedDict
 from dotenv import load_dotenv
@@ -52,6 +53,10 @@ user_input = input("Ask something: ")
 result = graph.invoke(
     {
         "messages": [HumanMessage(content=user_input)]
+    },
+    config={
+        "run_name": "simple_groq_graph",
+        "tags": ["groq", "llama-70b", "learning"]
     }
 )
 
